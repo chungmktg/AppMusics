@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/custom_background"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.android.chungpro.appmusics.Fragment.Fragment_chude_theloai_today">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutchudevatheloai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtchudevatheloai"
+            android:textColor="#87ffffff"
+            android:fontFamily="@font/fontmaster"
+            android:layout_marginLeft="10dp"
+            android:text="CHỦ ĐỀ VÀ THỂ LOẠI"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtXemthem"
+            android:textColor="#92ffffff"
+            android:layout_width="142dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/fontmaster"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:gravity="right"
+            android:text="xem thêm" />
+    </RelativeLayout>
+    <HorizontalScrollView
+        android:id="@+id/HorizontalScrollViewchudetheloai"
+        android:scrollbars="none"
+        android:layout_below="@id/relativeLayoutchudevatheloai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </HorizontalScrollView>
+</RelativeLayout>

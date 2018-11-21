@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#a67bf7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:background="@drawable/custom_background"
+        android:id="@+id/appbarlayoutSeachbaihat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarSeachbaihat"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v7.widget.RecyclerView
+        android:background="@drawable/custom_background"
+        android:id="@+id/recyclerSeachbaihat"
+        android:layout_below="@id/appbarlayoutSeachbaihat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+    <TextView
+        android:visibility="invisible"
+        android:fontFamily="@font/fontmaster"
+        android:textColor="#a3ffffff"
+        android:background="@drawable/custom_background"
+        android:id="@+id/txtkhongcodulieu"
+        android:text="Không có dữ liệu"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

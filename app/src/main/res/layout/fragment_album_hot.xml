@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/custom_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/relativeAlbum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txttitleAlbum"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/fontmaster"
+            android:text="ALBUM HOT"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#90ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:fontFamily="@font/fontmaster"
+            android:text="xem thêm"
+            android:id="@+id/txtxemthemAlbumhot"
+            android:textColor="#92ffffff"
+           android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerAlbum"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeAlbum"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp">
+
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>

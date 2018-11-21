@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#292D39"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/linearCardViewAlbum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/imgAlbum"
+            android:layout_width="200dp"
+            android:layout_height="200dp" />
+        <TextView
+            android:textColor="#87ffffff"
+            android:fontFamily="@font/fontmaster"
+            android:layout_gravity="bottom|center"
+            android:textSize="20sp"
+            android:maxWidth="200dp"
+            android:text="chạy ngay đi"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:id="@+id/txtTenAlbum"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txtTencasiAlbum"
+            android:text="Son tung"
+            android:textColor="#88ffffff"
+            android:textSize="15dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_gravity="bottom|center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"/>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

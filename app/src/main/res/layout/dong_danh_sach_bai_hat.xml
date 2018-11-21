@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#292D39"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="5dp"
+    app:cardCornerRadius="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtdanhsachIndex"
+            android:fontFamily="@font/fontmaster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="1"
+            android:paddingLeft="5dp"
+            android:textSize="15dp"
+            android:textColor="#8bffffff"
+            />
+        <TextView
+            android:id="@+id/txtdanhsachTenbaihat"
+            android:fontFamily="@font/fontmaster"
+            android:text="ten bai hat"
+            android:textSize="20sp"
+            android:layout_toRightOf="@id/txtdanhsachIndex"
+            android:layout_marginLeft="10dp"
+            android:textColor="#93ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txtdanhsachTencasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fontmaster"
+            android:text="ten ca si"
+            android:textSize="15sp"
+            android:layout_below="@id/txtdanhsachTenbaihat"
+            android:layout_toRightOf="@id/txtdanhsachIndex"
+            android:layout_marginLeft="10dp"
+            android:textColor="#92ffffff"
+            />
+        <ImageView
+            android:src="@drawable/love"
+            android:id="@+id/imgdanhsachLove"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

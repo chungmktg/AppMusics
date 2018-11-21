@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/custom_background"
+    android:scrollbars="none"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/linealayout_id"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <fragment
+            android:name="com.android.chungpro.appmusics.Fragment.Fragment_BannerQuangCao"
+            android:id="@+id/fragment_Banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <fragment
+            android:name="com.android.chungpro.appmusics.Fragment.Fragment_Playlist"
+            android:id="@+id/fragment_Playlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <fragment
+            android:name="com.android.chungpro.appmusics.Fragment.Fragment_chude_theloai_today"
+            android:id="@+id/fragment_chude_theloai_trongngay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <fragment
+            android:name="com.android.chungpro.appmusics.Fragment.Fragment_Album_hot"
+            android:id="@+id/fragment_Album_hot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <fragment
+            android:name="com.android.chungpro.appmusics.Fragment.Fragment_Bai_Hat_Hot"
+            android:id="@+id/fragment_Baihat_Hot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</ScrollView>
