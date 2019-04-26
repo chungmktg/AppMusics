@@ -10,6 +10,12 @@ import com.android.chungpro.appmusics.Adapter.MainViewPagerAdapter;
 import com.android.chungpro.appmusics.Fragment.Fragment_Tim_Kiem;
 import com.android.chungpro.appmusics.Fragment.Fragment_Trang_Chu;
 import com.android.chungpro.appmusics.R;
+import com.microsoft.appcenter.AppCenter;
+import com.microsoft.appcenter.analytics.Analytics;
+import com.microsoft.appcenter.crashes.Crashes;
+import com.microsoft.appcenter.AppCenter;
+import com.microsoft.appcenter.analytics.Analytics;
+import com.microsoft.appcenter.crashes.Crashes;
 
 public class MainActivity extends AppCompatActivity {
     TabLayout myTabLayout;
@@ -19,7 +25,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        AppCenter.start(getApplication(), "10cf1d69-7f49-45cc-a4d2-edd54bedd938",
+                Analytics.class, Crashes.class);
         anhxa();
         init();
     }
